@@ -1,0 +1,28 @@
+Soru 1 : [22,27,16,2,18,6] -> Insertion Sort
+
+1. Adım : [22,|27,16,2,18,6] 22 sayısı, 27 ile kıyaslanır. Bu durumda 22 sayısı 27 den küçük olduğu için diğer sayıya geçilir.
+
+2. Adım : [22,27,|16,2,18,6] 27 sayısı, 16 ile kıyaslanır. 16 sayısı sıralanmış tüm sayılarla kıyaslandıktan sonra en küçüğü olduğu için başa yazılır. [16,22,27,|2,18,6]
+
+3. Adım : [16,22,27,|2,18,6] 27 sayısı, 2 ile kıyaslanır. 2 sayısı sıralanmış tüm sayılarla kıyaslandıktan sonra en küçüğü olduğu için başa yazılır. [2,16,22,27,|18,6]
+
+4. Adım : [2,16,22,27,|18,6] 27 sayısı, 18 ile kıyaslanır. 18 sayısı, 16 dan büyük olduğu için 16 nın sağ tarafına yazılır. [2,16,18,22,27,|6]
+
+5. Adım : [2,16,18,22,27,|6] 27 sayısı, 6 ile kıyaslanır. 6 Sayısı, 2 den büyük olduğu için 2 nin sağ tarafına yazılır. [2,6,16,18,22,27,]
+
+Big-O gösterimi = O(n²)
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer?
+
+18 sayısı bu durumda Average case kapsamına girmektedir.
+
+Soru 2 : [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+1. Adım : [7,3,5,8,2,9,4,15,6] 7 sayısı listedeki tüm sayılar ile kıyaslanıp en küçük sayı (2) ile yer değiştirir. [2,|3,5,8,7,9,4,15,6]
+
+2. Adım : [2,|3,5,8,7,9,4,15,6] 3 sayısı listedeki kalan sayılar arasında en küçük olduğu için bir sonraki sayıya geçilir. 
+5 sayısı listedeki tüm sayılar ile kıyaslanıp en küçük sayı (4) ile yer değiştirir. [2,3,4,|8,7,9,5,15,6]
+
+3. Adım : [2,3,4,|8,7,9,5,15,6] 8 sayısı listedeki tüm sayılar ile kıyaslanıp en küçük sayı (5) ile yer değiştirir. [2,3,4,5,|7,9,8,15,6]
+
+4. Adım :[2,3,4,5,|7,9,8,15,6] 7 sayısı listedeki tüm sayılar ile kıyaslanıp en küçük sayı (6) ile yer değiştirir. [2,3,4,5,6,|9,8,15,7]
